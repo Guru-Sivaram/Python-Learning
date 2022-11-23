@@ -21,3 +21,23 @@ for height in heights:
 avgHeight = round(sumHeight / counter)
 print(counter)
 print(f"Average height is {avgHeight}")
+
+
+
+# 🚨 Don't change the code below 👇
+student_scores = input("Input a list of student scores \n").split(" ")
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+
+highScore = 0
+for score in student_scores:
+    if score > highScore:
+        highScore = score
+print(f"the highest score in the class is {highScore}")
+
+    #if student_scores[scores + 1] > student_scores[scores]:
+     #   highScore = student_scores[scores + 1]
