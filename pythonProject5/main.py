@@ -96,7 +96,6 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 
-
 unOrderedList = []
 for letter in range(0, nr_letters):
     print(random.choice(letters), end="")
@@ -123,3 +122,5 @@ print(unOrderedList)
 
 for x in range(len(unOrderedList)):
     print(unOrderedList[x], end="")
+
+#instead of making an empty list, you could've made an empty string and accomplished the same thing. Something to note :))
