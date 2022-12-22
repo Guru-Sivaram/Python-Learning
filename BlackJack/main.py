@@ -66,11 +66,12 @@ while restart == True:
             break
 
         anotherCard = input('Would user like to draw another card? Type yes or no \n')
-        if sum(User) < 21:
+        if sumUser < 21:
             if anotherCard == 'yes':
                randCard = dealCard(cards)
                User.append(randCard)
-            if sum(User) > 21:
+            if sumUser > 21:
+                calcScore(User)
                 gameCont = False
         if sum(User) == 21:
             gameCont = False
