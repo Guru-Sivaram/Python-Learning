@@ -84,20 +84,18 @@ while restart == True:
         sumUser = sum(User)
         sumComp = sum(Comp)
 
-        print(User)
-        print(Comp)
-        print(sumUser)
-        print(sumComp)
+        print(f'User cards are {User}, Score is {sumUser}')
+        print(f'Comp cards are {Comp}, Score is {sumComp}')
 
 
     After = True
     while After:
         if sumComp > 21:
-            print("User Wins 1")
+            print("User Wins")
             After = False
             break
         if sumUser > 21:
-            print("User Loses 1")
+            print("User Loses")
             After = False
             break
         if sumUser == 21:
@@ -109,11 +107,11 @@ while restart == True:
             After = False
             break
         elif sumComp > sumUser:
-            print("Comp Wins 2")
+            print("Comp Wins")
             After = False
             break
         elif sumUser > sumComp:
-            print("User Wins 3")
+            print("User Wins")
             After = False
             break
         elif sumUser == sumComp:
